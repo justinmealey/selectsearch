@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<title>Selectsearch Test</title>
+		<link rel="stylesheet" href="jquery.selectsearch.css">
+		<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="jquery.selectsearch.js"></script>
+
+	</head>
+	<body>
+		<select id="exampleSelect" class="select-class">
+			<option value="1">First Option</option>
+			<option value="2">Second Option</option>
+			<option value="3">Third Option</option>
+			<option value="4">Fourth Option</option>
+		</select>
+		<button id="deselect">Deselect Choices</button>
+		<button id="consoleLog">Console Log Choice</button>
+		<button id="selectThird">Select Third Option</button>
+	</body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#exampleSelect').selectsearch({width: '200'});
+			$('#deselect').on('click', function() {
+				$('.ss-container').selectsearch('deselect');
+				});
+			$('#selectThird').on('click', function() {
+				$('#exampleSelect').selectsearch('select', '3');
+				});
+			$('#consoleLog').on('click', function() {
+				console.log($('.ss-container').selectsearch('selected'));
+				});
+			});
+	</script>
+</html>
