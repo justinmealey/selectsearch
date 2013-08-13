@@ -69,6 +69,12 @@ Example:
 $('#exampleSelect').selectsearch('select', '3');
 ```
 
+* selected: Returns the selected option back as a JSON object with all of its attributes or returns false if nothing is selected.  Use the tag ".ss-container" to cycle through all select search boxes.
+ 
+```javascript
+var selectedOption = $('#someSelect').selectsearch('selected');
+// Returns, at the minimum, { class: "ss-option selected",  text: "This option's text", value: "1" }
+```
 
 Options
 =======
