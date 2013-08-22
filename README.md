@@ -13,6 +13,13 @@ Advantages to select search:
 
 This was made for a very narrow single use, so any feedback is appreciated.
 
+
+Example
+=======
+
+Hosted at http://mitm-inc.com/selectsearch/
+
+
 Events
 ======
 
